@@ -1,0 +1,14 @@
+db.patient.insert({
+"first name": "Rocket",
+"surname": "Bean",
+"animal": "guinea pig",
+"owner": "John Jane",
+"address": "12 bank avenue, mercury",
+"contact number" : "555 333 999",
+"records":
+[{
+"examination": "check up",
+"description": "tender back left leg, xray",
+"medication": "loxicom"
+}]
+})
