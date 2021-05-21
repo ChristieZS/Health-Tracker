@@ -1,10 +1,10 @@
 import React from "react";
-import {Link, Route, Switch, Router } from "react-router-dom";
+import {Link, Route, Switch } from "react-router-dom";
 import './css/bootstrap.min.css';
-import { Navbar, Nav, Button } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 import Modify from "./components/modify";
 import View from "./components/view";
-
+import Home from "./components/home";
 
 export default function App() {
 
@@ -15,18 +15,21 @@ export default function App() {
 				<Navbar.Toggle aria-controls="basic-navbar-nav"/>
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav>
-                        <Link to="/" className="nav-link">View</Link>
+                        <Link to="/view" className="nav-link">View Records</Link>
                         &nbsp; &nbsp; &nbsp;
-                        <Link to="/modify" className="nav-link">Modify</Link>
+                        <Link to="/add" className="nav-link">Add Records</Link>
                         &nbsp; &nbsp; &nbsp;
 					</Nav>
 				</Navbar.Collapse>
             </Navbar>
 
+            <br/>
+
 			<Switch>
-				<Route exact path="/"><View /></Route>
-				<Route path="/modify"><Modify /></Route>
-			</Switch>			
+				<Route exact path="/"><Home /></Route>
+				<Route exact path="/view"><View /></Route>
+				<Route path="/add"><Modify /></Route>
+			</Switch>		
 		</div>
   	);
 }

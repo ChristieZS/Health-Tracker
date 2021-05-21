@@ -1,0 +1,17 @@
+bootstrap form - add birthdate, add automated examination date, add vet name for examination, add mandatory etc... and date picker
+
+
+
+add appointment system ???
+
+
+
+add a search function to view records
+
+
+
+add delete button to the records on view records page, add functionality
+
+
+
+add modify button to the records on view records page, add functionality
